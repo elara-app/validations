@@ -9,8 +9,10 @@ public class HexColorValidator implements ConstraintValidator<HexColor, String> 
     final static String HEX_COLOR_REGEX = "^(#([A-Fa-f0-9]{6}))";
 
     @Override
-    public boolean isValid(String value, ConstraintValidatorContext constraintValidatorContext) {
-        if (value == null || value.isEmpty()) return true;
+    public boolean isValid(final String value, final ConstraintValidatorContext constraintValidatorContext) {
+        if (value == null || value.isEmpty()) {
+            return true;
+        }
         return value.matches(HEX_COLOR_REGEX);
     }
 
