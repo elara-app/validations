@@ -13,6 +13,7 @@ public class HexColorValidator implements ConstraintValidator<HexColor, String> 
         if (value == null || value.isEmpty()) {
             return true;
         }
+        System.out.println("Validado correctamente");
         return value.matches(HEX_COLOR_REGEX);
     }
 
