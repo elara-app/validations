@@ -20,3 +20,4 @@ public @interface HexColor {
     Class<? extends Payload>[] payload() default {};
 
 }
+
