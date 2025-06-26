@@ -8,7 +8,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  java-ci:
+  job-renamed:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
