@@ -16,7 +16,7 @@ public class HexColorValidator implements ConstraintValidator<HexColor, String> 
         return value.matches(HEX_COLOR_REGEX);
     }
 
-    public isBoolean isValidH(final String value, final ConstraintValidatorContext constraintValidatorContext) {
+    public boolean isValidH(final String value, final ConstraintValidatorContext constraintValidatorContext) {
         if (value == null || value.isEmpty()) {
             return true;
         }
